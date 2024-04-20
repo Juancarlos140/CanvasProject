@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:MAUI.Canvas.ViewModels"
+             x:Class="MAUI.Canvas.Views.InstructorView"
+             Title="InstructorView"
+             >
+    <VerticalStackLayout>
+        <Label 
+            Text="Instructor View"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+    <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+            <Button
+                Text="Course Manager"
+                Clicked="GoToCourses"
+                />
+                <Button
+                Text="Student Manager"
+                Clicked="GoToStudents"
+                />
+            <Button
+                Text="Add a Student to a Course"
+                Clicked="AddStudentToCourse"
+                />
+            <Button
+                Text="Go Back"
+                Clicked="ReturnToMainPage"
+                />
+    </VerticalStackLayout>
+</ContentPage>
