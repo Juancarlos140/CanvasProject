@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI.Canvas.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI.Canvas"
+    xmlns:local2="clr-namespace:MAUI.Canvas.Views"
+    xmlns:local3="clr-namespace:MAUI.Canvas.dialogs"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MAUI.Canvas">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Instructor View "
+        ContentTemplate="{DataTemplate local2:InstructorView}"
+        Route="Instructors" />
+    <ShellContent
+        Title="Course View"
+        ContentTemplate="{DataTemplate local2:CourseManagerView}"
+        Route="Courses" />
+    <ShellContent
+        Title="Student Add View"
+        ContentTemplate="{DataTemplate local2:StudentManagerView}"
+        Route="Students" />
+    <ShellContent
+        Title="Student Add to Course View"
+        ContentTemplate="{DataTemplate local2:AddStudentToCourseView}"
+        Route="AddStudentToCourse" />
+    <ShellContent
+        Title="Students"
+        ContentTemplate="{DataTemplate local2:StudentSearchView}"
+        Route="StudentSearch" />
+    <ShellContent
+        Title="Student View "
+        ContentTemplate="{DataTemplate local2:StudentView}"
+        Route="Students2" />
+    <ShellContent
+        Title="Student Info "
+        ContentTemplate="{DataTemplate local2:StudentInfoView}"
+        Route="StudentInfo" />
+
+    <ShellContent
+        Title="Add Course"
+        ContentTemplate="{DataTemplate local3:AddCourseDialog}"
+        Route="AddCourse" />
+    <ShellContent
+        Title="Add Student"
+        ContentTemplate="{DataTemplate local3:AddStudentDialog}"
+        Route="AddStudent" />
+
+
+</Shell>
